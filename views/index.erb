@@ -1,0 +1,7 @@
+<ul>
+  <% settings.articles.each do |article| %>
+    <li>
+      <a href="/<%= article.slug %>"><%= article.title %></a>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,11 @@
+<article>
+  <header>
+    <h1><%= article.title %></h1>
+    <time class="timeago" datetime="<%=article.date.xmlschema%>">
+      <%= article.date %>
+    </time>
+  </header>
+  <section>
+    <%= markdown article.content %>
+  </section>
+</article>
